@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Leaderboard</title>
 </head>
@@ -31,11 +31,13 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>Name</th>
-                                                <th>Score</th>
+												<tr>
+													<th>Name</th>
+													<th>Score</th>
+												</tr>     
                                             </thead>
                                             <tbody class="table-content">
-                                                <!--Dynamic Content here-->
+											 <!--Dynamic content here-->
                                             </tbody>
                                         </table>
                                     </div>
@@ -57,18 +59,19 @@
                                             <label class="control-label">
                                                 Name
                                             </label>
-                                            <input class="form-control userdetails" name="name" type="text" required="true" />
+                                            <input class="form-control userdetails" name="name" type="text" required />
                                         </div>
                                         <div class="form-group label-floating">
                                             <label class="control-label">
                                                 Score
                                             </label>
-                                            <input class="form-control userdetails" name="number" type="number" required="true" />
+                                            <input class="form-control userdetails" name="number" type="number" required />
                                         </div>
                                         <div class="category form-category">
-                                        <div class="form-footer text-right">
-                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3">group_add</i> Submit</button>
-                                        </div>
+											<div class="form-footer text-right">
+												<button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3">group_add</i> Submit</button>
+											</div>
+										</div>
                                     </div>
                                 </form>
                             </div>
@@ -78,6 +81,6 @@
 			</div>
 		</div>
 	</div>
-	<p class="text-center hide loading_anime"><img class="loading" src="" width="500"/></p>
+	<p class="text-center hide loading_anime"><img class="loading" src="#" width="500" alt="logo"/></p>
 </body>
 </html>
