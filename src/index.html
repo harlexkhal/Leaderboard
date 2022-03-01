@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Leaderboard</title>
+</head>
+<body class="bg-success">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card p-5">
+					<h1 class="text-center animate__animated animate__rubberBand text-primary">Leaderboard</h1>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card p-3">
+                                <div class="card-header card-header-icon" data-background-color="rose">
+									<div class="card-title d-flex">
+										<i class="material-icons mr-1 mt-1 animate__animated animate__rotateIn">grade</i>
+										<h4>Recent Scores </h4>
+									   <button class="btn btn-success d-flex ml-auto" type="button"><i class="material-icons mr-3">update</i> Refresh</button>
+									</div>
+                                </div>
+                                <div class="card-content">      
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class="text-primary">
+                                                <th>Name</th>
+                                                <th>Score</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="animate__animated animate__bounceInLeft">
+                                                    <td>Alex</td>
+                                                    <td class="text-primary">800</td>
+                                                </tr>
+												<tr class="animate__animated animate__bounceInLeft">
+                                                    <td>Uzumaki</td>
+                                                    <td class="text-primary">500</td>
+                                                </tr>    
+												<tr class="animate__animated animate__bounceInLeft">
+                                                    <td>Uchiha</td>
+                                                    <td class="text-primary">300</td>
+                                                </tr>                 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						<div class="col-md-6">
+                            <div class="card p-3">
+                                <form>
+									<div class="card-header card-header-icon" data-background-color="rose">
+										<div class="card-title d-flex">
+											<i class="material-icons mt-1 mr-3">group</i>
+											<h4>Add your score</h4>
+										</div>
+									</div>
+                                    <div class="card-content">
+                                        <div class="form-group label-floating mt-3">
+                                            <label class="control-label">
+                                                Name
+                                            </label>
+                                            <input class="form-control" name="text" type="email" required="true" />
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <label class="control-label">
+                                                Score
+                                            </label>
+                                            <input class="form-control" name="number" id="registerPassword" type="password" required="true" />
+                                        </div>
+                                        <div class="category form-category">
+                                        <div class="form-footer text-right">
+                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3">group_add</i> Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
