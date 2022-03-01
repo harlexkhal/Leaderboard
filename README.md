@@ -9,6 +9,7 @@ Our goal here is to Build a Leaderboard application where you can add your name 
 
 - Responsive UI/UX design with interactive animation
 - Integrated webpack
+- Conncected to [Leader board API](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) service enpoints
 
 ## Built With
 
