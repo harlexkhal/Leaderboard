@@ -12,7 +12,7 @@
     <title>Leaderboard</title>
 <script defer src="core.js"></script></head>
 <body class="bg-success">
-	<div class="container">
+	<div class="container mt-5">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card p-5">
@@ -24,7 +24,7 @@
 									<div class="card-title d-flex">
 										<i class="material-icons mr-1 mt-1 animate__animated animate__rotateIn">grade</i>
 										<h4>Recent Scores </h4>
-									   <button class="btn btn-success d-flex ml-auto" type="button"><i class="material-icons mr-3">update</i> Refresh</button>
+									   <button class="btn btn-success d-flex ml-auto f5" type="button"><i class="material-icons mr-3">update</i> Refresh</button>
 									</div>
                                 </div>
                                 <div class="card-content">      
@@ -34,19 +34,8 @@
                                                 <th>Name</th>
                                                 <th>Score</th>
                                             </thead>
-                                            <tbody>
-                                                <tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Alex</td>
-                                                    <td class="text-primary">800</td>
-                                                </tr>
-												<tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Uzumaki</td>
-                                                    <td class="text-primary">500</td>
-                                                </tr>    
-												<tr class="animate__animated animate__bounceInLeft">
-                                                    <td>Uchiha</td>
-                                                    <td class="text-primary">300</td>
-                                                </tr>                 
+                                            <tbody class="table-content">
+                                                <!--Dynamic Content here-->
                                             </tbody>
                                         </table>
                                     </div>
@@ -55,7 +44,7 @@
 						</div>
 						<div class="col-md-6">
                             <div class="card p-3">
-                                <form>
+                                <form class="data-form">
 									<div class="card-header card-header-icon" data-background-color="rose">
 										<div class="card-title d-flex">
 											<i class="material-icons mt-1 mr-3">group</i>
@@ -63,21 +52,22 @@
 										</div>
 									</div>
                                     <div class="card-content">
+										<p class="text-success text-center animate__animated animate__rubberBand success-message"></p>
                                         <div class="form-group label-floating mt-3">
                                             <label class="control-label">
                                                 Name
                                             </label>
-                                            <input class="form-control" name="text" type="email" required="true" />
+                                            <input class="form-control userdetails" name="name" type="text" required="true" />
                                         </div>
                                         <div class="form-group label-floating">
                                             <label class="control-label">
                                                 Score
                                             </label>
-                                            <input class="form-control" name="number" id="registerPassword" type="password" required="true" />
+                                            <input class="form-control userdetails" name="number" type="number" required="true" />
                                         </div>
                                         <div class="category form-category">
                                         <div class="form-footer text-right">
-                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3">group_add</i> Register</button>
+                                            <button type="submit" class="btn btn-primary btn-fill d-flex ml-auto"><i class="material-icons mr-3">group_add</i> Submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -88,5 +78,6 @@
 			</div>
 		</div>
 	</div>
+	<p class="text-center hide loading_anime"><img class="loading" src="" width="500"/></p>
 </body>
 </html>
