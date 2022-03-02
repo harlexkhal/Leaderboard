@@ -5,3 +5,7 @@
 .show {
   display: block;
 }
+
+.loading_anime {
+  margin-top: -100px;
+}
