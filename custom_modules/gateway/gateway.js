@@ -5,21 +5,14 @@ class NetworkGateway {
   }
 
   getID = async (key) => {
-    await fetch(`${this.endpointURL}`, {
+    const data = await fetch(`${this.endpointURL}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ name: key }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        const stringResult = data.result;
-        this.id = stringResult.substring(13, 34);
-      })
-      .catch((error) => {
-        throw error;
-      });
+    });
+    return data.json();
   }
 
   insertData = async (_name, _score) => {
