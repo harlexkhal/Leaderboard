@@ -10,6 +10,10 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff)$/,
+        type: 'asset/resource'
+      }
     ],
   },
   plugins: [
@@ -20,5 +24,6 @@ module.exports = {
   output: {
     filename: 'core.js',
     path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'assets/images/[name].[ext]'
   },
 };

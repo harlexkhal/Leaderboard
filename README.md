@@ -1,7 +1,7 @@
 # Leaderboard | MODULE-II
 
 > This is a solo project being built in our second module of our curriculum at microverse. its a Leaderboard application were you are able to add your name and score to the leaderboard with the help of an API your details can be stored and retrieved correctly
-![screenshot](assets/demo.png)
+![screenshot](branding/demo.png)
 
 Our goal here is to Build a Leaderboard application where you can add your name and score to it with the help of an API. click [here](https://harlexkhal.github.io/Leaderboard/) to see deployed live version
 
@@ -9,6 +9,7 @@ Our goal here is to Build a Leaderboard application where you can add your name 
 
 - Responsive UI/UX design with interactive animation
 - Integrated webpack
+- Asynchronously conncected to [Leader board API](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) service enpoints
 
 ## Built With
 
